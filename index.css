@@ -1,0 +1,141 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #FF7978;
+    background-image: url(./images/bg-intro-desktop.png);
+
+}
+
+.intro,
+.form-part {
+    display: inline-block;
+    width: 35%;
+}
+
+.form-part {
+    position: relative;
+    top: 110px;
+}
+
+.intro {
+    margin: 10%;
+    margin-right: 3%;
+}
+
+.intro h1 {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+form {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+
+form input {
+    margin: 10px auto;
+    width: 80%;
+    outline: none;
+    border: solid 1px gray;
+}
+
+form input::placeholder {
+    font-size: 14px;
+    padding: 15px;
+}
+
+.try {
+    background-color: #5D54A3;
+    text-align: center;
+    box-shadow: 0px 5px 10px #3f396f;
+}
+
+.try span {
+    font-weight: 600;
+}
+
+form button {
+    background-color: #37CC8A;
+    box-shadow: 0px 5px 10px #268258;
+    font-size: 18px;
+    margin: 10px auto;
+    width: 85%;
+    border: none;
+}
+form button:hover{
+    background-color: #30ba7c;
+}
+form p {
+    font-size: 10px;
+    color: gray;
+}
+
+form p span {
+    font-size: 11px;
+    color: red;
+    font-weight: 600;
+}
+
+.errormsg,.errormsge{
+    text-align: right;
+    width: 93%;
+    color: red;
+    margin: 0;
+}
+
+/* grouping */
+
+.intro p,
+.intro h1,
+.try,
+form button {
+    color: white;
+}
+
+form input,
+.try,
+form,
+form button {
+    border-radius: 8px;
+    padding: 13px;
+}
+
+
+/* media query */
+@media(max-width:700px) {
+    body{
+        background-image: url(./images/bg-intro-mobile.png);
+    }
+    .intro,
+    .form-part {
+        width:100%;
+        text-align: center;
+    }
+    .intro{
+        margin:5% auto;
+    }
+    .intro h1 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    form{
+        padding:5px ;
+    }
+    .form-part{
+        top:10px; 
+        margin-bottom: 30px;
+    }
+    .innerform{
+        width: 90%;
+        margin: auto;
+    }
+    .try{
+        padding: 20px 20%;
+    }
+}
